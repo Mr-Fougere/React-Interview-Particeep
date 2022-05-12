@@ -21,8 +21,8 @@ export default function Filter(props) {
         setCheckAll(e.target.checked);
     };
     return (
-        <div className="filterBar">
-            <div className="categoriesBar">
+        <div className="filterBar ">
+            <div className="categoriesBar row-xl">
                 {props.filters.length > 1 ?
                     <Checkbox indeterminate={indeterminate} onChange={onCheckAllChange} checked={checkAll} >
                         All Categories

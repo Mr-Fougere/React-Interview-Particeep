@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  /* CSS HEX */
+--jet: #363537ff;
+--bro:#9c354b;
+--red-crayola: #ef2d56ff;
+--mango-tango: #ed7d3aff;
+--pistachio: #8cd867ff;
+--emerald: #2fbf71ff;
 }
 
 .App-logo {
@@ -12,9 +19,6 @@
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
-input:checked{
-  background: darkred !important
-}
 
 header{
   min-height: 20%;
@@ -24,9 +28,7 @@ header{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background-color: wheat;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.56); 
-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.56);
+  margin-bottom: 2vh;
 }
 
 .cards{
@@ -54,60 +56,95 @@ box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.56);
 .ratio{
   display: flex;
   flex-direction: row;
-  justify-content: right
+  justify-content: right;
+  align-items: center;
 ;}
+
+.ant-card-body{
+  border: 2px solid var(--jet);
+  padding: 0px !important;
+
+}
+.ant-card-head{
+  border: 2px solid var(--jet);
+  background-color: var(--bro);
+  color: wheat;
+  font-weight: bold;
+  font-size:large}
+.ant-card-extra{
+  color: wheat;
+}
 .thumbUp{
   width: 15%;
+  margin:1%;
   position: relative;
-  background-color:rgb(140, 222, 150);
+  background-color: rgb(184, 223, 165);
+  color:white;
   font-weight: bold;
+  border: var(--emerald) solid 1px; 
 }
+
 .percent{
-  width: 10%;
-  color: green;
+  width: 20%;
+  color: var(--pistachio);
   font-weight: bold;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .thumbDown{
   width: 15%;
+  margin:1%;
   position: relative;
-  background-color:rgb(222, 156, 156)
+  background-color:rgb(226, 167, 180);
+  color:white;
+  font-weight: bold;
+  border: var(--red-crayola) solid 1px;
 }
 .btnDelete{
   position: absolute;
-  left: 0px;
-  top: 0px;
-  color: red;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+.btnDelete:hover{
+  color:white !important;
 }
 
 .thumbUp:hover{
-  background-color: #4ffd3c;
+  background-color: var(--pistachio);
 }
 .thumbDown:hover{
-  background-color:#ff1100
-}
-
-.ant-card-body{
-  padding: 0px !important;
+  background-color: var(--red-crayola)
 }
 
 .ant-progress{
-  width: 55%;
+  width: 45%;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
 
 .cardMovie{
   margin: 2vh;
-  -webkit-box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.18); 
-  box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.18);
 }
 .title{
   width:100%;
-  background-color:darkred;
+  background-color:var(--bro);
   color:white;
+  height:5vh
 }
 
 footer{
   margin:10px
+}
+.filterBar{
+  width:70%;
+  display: flex;
+  justify-content:center;
+  border-bottom: 2px solid var(--bro);
+}
+.categoriesBar{
+  display: flex;
+  align-items: center;
+  height:5vh;
 }

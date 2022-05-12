@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <span className="title">🎬React-Interview 🎬</span>
+        <span className="title">React-Interview</span>
         <Filter
           handleFilter={setActiveFilters}
           filters={filters}
