@@ -12,18 +12,31 @@
     animation: App-logo-float infinite 3s ease-in-out;
   }
 }
+input:checked{
+  background: darkred !important
+}
 
-.App-header {
-  min-height: 100vh;
+header{
+  min-height: 20%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  background-color: wheat;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.56); 
+box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.56);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.cards{
+  min-height: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 @keyframes App-logo-float {
@@ -36,4 +49,65 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.ratio{
+  display: flex;
+  flex-direction: row;
+  justify-content: right
+;}
+.thumbUp{
+  width: 15%;
+  position: relative;
+  background-color:rgb(140, 222, 150);
+  font-weight: bold;
+}
+.percent{
+  width: 10%;
+  color: green;
+  font-weight: bold;
+  text-align: right;
+}
+.thumbDown{
+  width: 15%;
+  position: relative;
+  background-color:rgb(222, 156, 156)
+}
+.btnDelete{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: red;
+}
+
+.thumbUp:hover{
+  background-color: #4ffd3c;
+}
+.thumbDown:hover{
+  background-color:#ff1100
+}
+
+.ant-card-body{
+  padding: 0px !important;
+}
+
+.ant-progress{
+  width: 55%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.cardMovie{
+  margin: 2vh;
+  -webkit-box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.18); 
+  box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.18);
+}
+.title{
+  width:100%;
+  background-color:darkred;
+  color:white;
+}
+
+footer{
+  margin:10px
 }
